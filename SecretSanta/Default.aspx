@@ -4,7 +4,7 @@
     <section class="featured">
         <div class="content-wrapper">
             <hgroup class="title">
-                <h1><%: SecretSanta %>.</h1>
+                <h1>Secret Santa</h1>
                 <h2>Second Update Third Update let's go!</h2>
             </hgroup>
             <p>
