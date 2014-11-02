@@ -17,15 +17,15 @@ namespace SecretSanta
             //    consumerKey: "your Twitter consumer key",
             //    consumerSecret: "your Twitter consumer secret");
 
-            //OpenAuth.AuthenticationClients.AddFacebook(
-            //    appId: "your Facebook app id",
-            //    appSecret: "your Facebook app secret");
+            OpenAuth.AuthenticationClients.AddFacebook(
+                appId: "295060797368713",
+                appSecret: "7a7ff7d3478038f197cafb7586d24d06");
 
-            //OpenAuth.AuthenticationClients.AddMicrosoft(
-            //    clientId: "your Microsoft account client id",
-            //    clientSecret: "your Microsoft account client secret");
+            OpenAuth.AuthenticationClients.AddMicrosoft(
+                clientId: "your Microsoft account client id",
+                clientSecret: "your Microsoft account client secret");
 
-            //OpenAuth.AuthenticationClients.AddGoogle();
+            OpenAuth.AuthenticationClients.AddGoogle();
         }
     }
 }
