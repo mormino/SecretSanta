@@ -14,8 +14,29 @@
     <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
 </head>
 <body>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '295060797368713',
+                xfbml: true,
+                version: 'v2.2'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
     <form runat="server">
     <asp:ScriptManager runat="server">
+
+
         <Scripts>
             <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=272931&clcid=0x409 --%>
             <%--Framework Scripts--%>
@@ -69,6 +90,7 @@
                     </ul>
                 </nav>
             </div>
+
         </div>
     </header>
     <div id="body">
@@ -77,6 +99,12 @@
             <asp:ContentPlaceHolder runat="server" ID="MainContent" />
         </section>
     </div>
+        <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
     <footer>
         <div class="content-wrapper">
             <div class="float-left">
