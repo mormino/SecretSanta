@@ -2,7 +2,7 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
-        <h1><%: Title %>.</h1>
+        <h1><%: This is no more the longer title %>.</h1>
         <h2>Your app description page.</h2>
     </hgroup>
 
